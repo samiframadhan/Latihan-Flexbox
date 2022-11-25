@@ -1,0 +1,17 @@
+﻿.listnav {
+    display: flex;
+    flex-direction: column;
+}
+
+.listnav span{
+    height: 40px;
+    background-color:aliceblue;
+    margin: 0.5rem;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.listnav span:hover{
+    background-color: mediumspringgreen;
+}

@@ -1,0 +1,158 @@
+.page {
+    position: relative;
+    height: 120vh;
+    overflow-x: clip;
+}
+
+.page .container-dua {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+.container-nol {
+    position: sticky;
+    width: 100vw;
+    height: 10vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #464646;
+}
+
+    .container-nol h5 {
+        margin: 1.5rem;
+        flex: 1;
+    }
+
+    .container-nol .links a {
+        margin-right: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .container-nol button{
+        
+    }
+
+.container-satu {
+    display: flex;
+    background-color: #eee;
+}
+
+    .container-satu main{
+        flex: 3;
+        background-color: aliceblue;
+    }
+
+    .container-satu .sidebar-left{
+        flex: 1;
+        margin: 1rem;
+    }
+
+    .container-satu .sidebar-right{
+        flex: 1;
+        margin: 1rem;
+    }
+
+.container-dua {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+    .container-dua .card-satu{
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 2rem;
+        padding: 2rem;
+        background-color: azure;
+    }
+
+    .container-dua .card-dua {
+        border: 5px solid black;
+        border-radius: 5px;
+        background-color: azure;
+    }
+
+.container-tiga{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.container-tiga img{
+    width: 200px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.container-empat {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+
+    .container-empat .card:nth-child(2){
+        width: 15rem;
+        height: 20rem;
+    }
+    .card{
+        width: 10rem;
+        height: 15rem;
+        border: 1px solid red;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: clip;
+        margin: 1rem;
+    }
+    .card .header{
+        height: 50%;
+    }
+        .card .card-descr {
+            margin: 1rem;
+        }
+    .card .card-descr p{
+        font-size: 80%;
+    }
+
+@media (max-width: 640.98px) {
+    .container-dua{
+        flex-direction: column;
+    }
+
+    .container-satu .sidebar-left, .sidebar-right{
+        display: none;
+    }
+
+    .container-nol .links a {
+        display: none;
+    }
+
+    .container-nol .button-nav button{
+        width: 20px;
+        height: 20px;
+        background-color: azure;
+        border: 2px solid red;
+        transform: translateX(-20px);
+    }
+}
+
+@media (min-width: 641px) {
+    .page {
+        /*flex-direction: row;*/
+    }
+
+    .article {
+        /*padding-left: 2rem !important;
+        padding-right: 1.5rem !important;*/
+    }
+}

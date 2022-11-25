@@ -1,0 +1,97 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>Latihan Flexbox</PageTitle>
+
+<div class="page">
+    <div class="container-nol">
+        <h5>Weather App</h5>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/counter">Counter</a>
+            <a href="/forecast">Weather Forecast</a>
+            <a href="/about">About</a>
+        </div>
+        <button class="button-nav" onclick=""/>
+    </div>
+    <div class="container-satu">
+        
+        <div class="sidebar-left">
+            <SidebarLeft/>
+        </div>
+        
+        <main>
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+
+        <div class="sidebar-right">
+            <SidebarRight />
+        </div>
+    </div>
+
+    <div class="container-dua">
+        <div class="card-satu">
+            <h5>Subscribe 1 Month</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit orci eget dui euismod sodales.</p>
+        </div>
+        <div class="card-satu">
+            <h5>Subscribe 1 Year</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit orci eget dui euismod sodales.</p>
+        </div>
+        <div class="card-satu">
+            <h5>Subscribe 5 Year</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit orci eget dui euismod sodales.</p>
+        </div>
+    </div>
+
+    <div class="container-tiga">
+        <div class="thumb-satu">
+            <img src="images/weather themed t-shirts.png"/>
+        </div>
+        <div class="thumb-dua">
+            <img src="images/weather themed t-shirts (1).png" />
+        </div>
+        <div class="thumb-tiga">
+            <img src="images/weather themed t-shirts (2).png"/>
+        </div>
+        <div class="thumb-empat">
+            <img src="images/weather themed t-shirts (3).png" />
+        </div>
+        <div class="thumb-lima">
+            <img src="images/weather themed t-shirts (4).png" />
+        </div>
+        <div class="thumb-enam">
+            <img src="images/weather themed t-shirts (5).png" />
+        </div>
+        <div class="thumb-tujuh">
+            <img src="images/weather themed t-shirts (6).png" />
+        </div>
+        <div class="thumb-delapan">
+            <img src="images/weather themed t-shirts (7).png" />
+        </div>
+    </div>
+    <div class="container-empat">
+        <div class="card">
+            <img class="header" src="images/weather themed t-shirts (7).png" />
+            <div class="card-descr">
+                <h5>1 Month</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit orci eget dui euismod sodales.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="header" style="width: 100%" src="images/weather themed t-shirts (7).png" />
+            <div class="card-descr">
+                <h5>1 Year</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit orci eget dui euismod sodales.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="header" src="images/weather themed t-shirts (7).png" />
+            <div class="card-descr">
+                <h5>5 Years</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit orci eget dui euismod sodales.</p>
+            </div>
+        </div>
+    </div>
+</div>
